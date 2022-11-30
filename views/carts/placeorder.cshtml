@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "placeorder";
+}
+
+<h1>Choose items to order</h1>
+
+@using(Html.BeginForm())
+{
+    @Html.EditorForModel()
+   <input type="submit" value="CONFIRMORDER" class="btn btn-success" />
+}
+<h1>TotalPrice: @ViewData["total"]</h1>
